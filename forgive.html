@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>An Apology from Yakout to Jalil</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+      color: #333;
+      text-align: center;
+      padding: 50px;
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    h1 {
+      color: #e74c3c;
+      font-size: 2.5em;
+      animation: fadeIn 2s ease-in-out;
+    }
+    p {
+      font-size: 1.2em;
+      line-height: 1.6;
+      animation: slideUp 1.5s ease-in-out;
+    }
+    .heart {
+      color: #e74c3c;
+      font-size: 3em;
+      animation: heartbeat 1.5s infinite;
+    }
+    .buttons {
+      margin-top: 20px;
+      animation: fadeIn 3s ease-in-out;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 1em;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin: 10px;
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+    #yes {
+      background: #2ecc71;
+      color: white;
+    }
+    #no {
+      background: #e74c3c;
+      color: white;
+    }
+    button:hover {
+      transform: scale(1.1);
+    }
+    @keyframes heartbeat {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes slideUp {
+      from { transform: translateY(20px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <h1 > Hi Jalil </h1>
+  <p>
+    I’ve been debugging my heart,<br>
+    and I found a critical error:<br>
+    <strong>I hurt you.</strong> I’m so sorry. 💔
+  </p>
+  <p>
+    I know I messed up, and I’m really sorry. You mean the world to me, and I hate that I hurt you.
+
+I promise to do better and make it up to you. ❤️
+  </p>
+  <div class="heart">❤️</div>
+  <div class="buttons">
+    <p>Will you forgive me?</p>
+    <button id="yes">Yes, of course! ❤️</button>
+    <button id="no">Hmm, not yet...</button>
+  </div>
+
+  <script>
+    const yesButton = document.getElementById('yes');
+    const noButton = document.getElementById('no');
+
+    yesButton.addEventListener('click', () => {
+      alert("Yay! Thank you, Jalil! You've made me the happiest. Let's make things amazing again! 💖");
+    });
+
+    noButton.addEventListener('click', () => {
+      alert("Aww, I understand. I'll keep trying to make it up to you. 💔");
+    });
+  </script>
+</body>
+</html>
